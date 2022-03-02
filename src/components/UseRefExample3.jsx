@@ -8,9 +8,8 @@ function UseRefExample3() {
     <div>
       {showTodo && <Todo />}
       <button
-        className='btn btn-primary'
-        onClick={() => setShowTodo(!showTodo)}
-      >
+        className="btn btn-primary"
+        onClick={() => setShowTodo(!showTodo)}>
         Toggle Todo
       </button>
     </div>
