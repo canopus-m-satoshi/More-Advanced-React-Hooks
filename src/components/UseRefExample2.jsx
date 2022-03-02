@@ -13,13 +13,13 @@ function UseRefExample2() {
 
   return (
     <div>
-      <h1>Renders: {renders.current}</h1>
-      <h2>Prev Name State: {prevName.current}</h2>
+      <h1>Renders:{renders.current}</h1>
+      <h2>Prev State Name:{prevName.current}</h2>
       <input
-        type='text'
+        type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className='form-control mb-3'
+        className="form-control mb-3"
       />
     </div>
   )
