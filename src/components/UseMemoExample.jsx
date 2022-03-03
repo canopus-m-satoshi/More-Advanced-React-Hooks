@@ -23,17 +23,17 @@ function useMemoExample() {
   return (
     <div>
       <input
-        type='number'
+        type="number"
         value={number}
         onChange={(e) => setNumber(e.target.value)}
-        className='form-control w-25'
+        className="form-control w-25"
       />
 
-      <h2 className='my-3'>
+      <h2 className="my-3">
         The sqrt of {number} is {sqrt}
       </h2>
 
-      <button onClick={onClick} className='btn btn-primary'>
+      <button onClick={onClick} className="btn btn-primary">
         Re Render
       </button>
       <h3>Renders: {renders.current}</h3>
