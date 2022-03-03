@@ -4,7 +4,7 @@ function UseCallbackExample() {
   const [tasks, setTasks] = useState([])
 
   const addTask = useCallback(() => {
-    setTasks((prevState) => [...prevState, 'Some Task'])
+    setTasks((prevState) => [...prevState, 'some task'])
   }, [setTasks])
 
   return (
@@ -21,7 +21,7 @@ const Button = React.memo(({ addTask }) => {
   console.log('Button rendered')
   return (
     <div>
-      <button className='btn btn-primary' onClick={addTask}>
+      <button className="btn btn-primary" onClick={addTask}>
         Add Task
       </button>
     </div>
