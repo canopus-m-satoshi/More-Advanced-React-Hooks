@@ -3,7 +3,7 @@ import useFetch from '../hooks/useFetch'
 function CustomHookExample1() {
   const { data, loading } = useFetch(
     'https://jsonplaceholder.typicode.com/posts',
-    {}
+    {},
   )
 
   if (loading) {
@@ -13,7 +13,7 @@ function CustomHookExample1() {
   return (
     <div>
       {data.map((post) => (
-        <h3 key={post.id}>{post.title}</h3>
+        <h3 key={post.id}>Title: {post.title}</h3>
       ))}
     </div>
   )
